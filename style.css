@@ -11,6 +11,14 @@ a {
   list-style: none;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 800;
+}
+
 html,
 body {
   font-family: "Barlow", Verdana, Tahoma, sans-serif;
@@ -54,7 +62,7 @@ body {
 }
 
 .hero #focus {
-  font-family: "Fraunces";
+  font-family: "Fraunces", sans-serif;
   font-weight: 600;
   color: #000;
   background-color: #fff;
@@ -72,32 +80,114 @@ body {
 }
 
 .hero .center h1 {
-  font-family: "Fraunces";
   font-size: 3rem;
   letter-spacing: 0.7rem;
-  font-weight: 800;
 }
 
 .grid-view {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-view .list-items {
-  height: 600px;
+  height: 530px;
+  background-position: center;
+  background-size: cover;
 }
 
+.grid-view .stand-alones {
+  padding-block-start: 9rem;
+}
+.stand-alones.one {
+  padding-inline-start: 9rem;
+  padding-inline-end: 5rem;
+}
 
+.stand-alones.four {
+  padding-inline-start: 6rem;
+  padding-inline-end: 8rem;
+}
+
+.stand-alones h2 {
+  font-size: 2.2rem;
+  margin-block-end: 2rem;
+}
+
+.stand-alones p {
+  color: #818498ff;
+  line-height: 1.7rem;
+  margin-block-end: 2rem;
+}
+
+.stand-alones h4 {
+  font-size: 0.9rem;
+  padding-inline-start: 0.4rem;
+}
+
+.hand-drawn-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.hand-drawn-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 105%;
+  height: 7px;
+  border-radius: 3px;
+  pointer-events: none;
+  transform: translateY(1px);
+  z-index: -1;
+}
+
+.one .hand-drawn-underline::after {
+  background: rgb(252, 237, 152);
+}
+
+.four .hand-drawn-underline::after {
+  background: rgb(255, 188, 179);
+}
+
+.stand-alones h4 a {
+  color: #000;
+}
 
 .list-items.two {
   background-image: url(/images/desktop/image-transform.jpg);
+  max-height: 100%;
 }
 .list-items.three {
   background-image: url(/images/desktop/image-stand-out.jpg);
+  max-height: 100%;
 }
 .list-items.five {
   background-image: url(/images/desktop/image-graphic-design.jpg);
+  max-height: 100%;
 }
 .list-items.six {
   background-image: url(/images/desktop/image-photography.jpg);
+  max-height: 100%;
+}
+
+.list-items.subtext {
+  padding-block-start: 18.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #24303d;
+}
+
+.subtext h3 {
+  font-size: 1.5rem;
+  margin-block-end: 2rem;
+}
+
+.subtext p {
+  margin: 0 9rem;
+  text-align: center;
+  line-height: 1.5rem;
+  font-size: 0.95rem;
 }
