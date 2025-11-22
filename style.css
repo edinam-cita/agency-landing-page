@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,700;0,800;0,900;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'");
 
 * {
   margin: 0;
@@ -17,11 +17,16 @@ h3,
 h4 {
   font-family: "Fraunces", sans-serif;
   font-weight: 800;
+  color: #23303eff;
 }
 
 html,
 body {
   font-family: "Barlow", Verdana, Tahoma, sans-serif;
+}
+
+.logo {
+  font-family: "Poppins", Verdana, Tahoma, sans-serif;
 }
 
 .container {
@@ -34,40 +39,50 @@ body {
   background: url(/images/desktop/image-header.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  color: #fff;
 }
 
 .hero nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.5rem 3%;
+  padding: 2rem 3%;
 }
 
-.hero .logo {
-  font-family: "Barlow", Verdana, Tahoma, sans-serif;
-}
-
-.hero a {
+.hero h1 {
   color: #fff;
 }
 
-.hero ul {
+.hero a {
+  color: #ffffff;
+}
+
+ul {
   list-style-type: none;
   display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
 }
 
-.hero li {
-  margin-inline-start: 3rem;
-}
-
-.hero #focus {
+.hero .nav-focus {
   font-family: "Fraunces", sans-serif;
   font-weight: 600;
-  color: #000;
   background-color: #fff;
   padding: 1rem 2rem;
   border-radius: 3rem;
+}
+
+.nav-focus a {
+  color: #23303eff;
+}
+
+.hero .nav-focus:hover,
+.hero .nav-focus:active,
+.hero .nav-focus:hover a,
+.hero .nav-focus:active a {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
 }
 
 .hero .center {
@@ -143,15 +158,25 @@ body {
 }
 
 .one .hand-drawn-underline::after {
-  background: rgb(252, 237, 152);
+  background: #fced98;
+}
+
+.one .hand-drawn-underline:hover::after,
+.one .hand-drawn-underline:active::after {
+  background: #fad400ff;
 }
 
 .four .hand-drawn-underline::after {
-  background: rgb(255, 188, 179);
+  background: #ffbcb3;
+}
+
+.four .hand-drawn-underline:hover::after,
+.four .hand-drawn-underline:active::after {
+  background: #fe7867ff;
 }
 
 .stand-alones h4 a {
-  color: #000;
+  color: #23303eff;
 }
 
 .list-items.two {
@@ -165,10 +190,12 @@ body {
 .list-items.five {
   background-image: url(/images/desktop/image-graphic-design.jpg);
   max-height: 100%;
+  color: #25564bff;
 }
 .list-items.six {
   background-image: url(/images/desktop/image-photography.jpg);
   max-height: 100%;
+  color: #19536bff;
 }
 
 .list-items.subtext {
@@ -177,7 +204,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #24303d;
 }
 
 .subtext h3 {
@@ -273,19 +299,58 @@ body {
   background-repeat: none;
 }
 
-.footer .ein {
-  background-image: url(/images/desktop/image-gallery-milkbottles.jpg) ;
+.footer .eins {
+  background-image: url(/images/desktop/image-gallery-milkbottles.jpg);
 }
 .footer .zwei {
-  background-image: url(/images/desktop/image-gallery-orange.jpg) ;
+  background-image: url(/images/desktop/image-gallery-orange.jpg);
 }
 .footer .drei {
-  background-image: url(/images/desktop/image-gallery-cone.jpg) ;
+  background-image: url(/images/desktop/image-gallery-cone.jpg);
 }
 .footer .vier {
-  background-image: url(/images/desktop/image-gallery-sugarcubes.jpg) ;
+  background-image: url(/images/desktop/image-gallery-sugarcubes.jpg);
 }
 
 .footer .text-ending {
   background-color: #8ccfc0;
+  width: 100%;
+  height: 22rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-ending h1 {
+  color: #2d7464;
+  margin-block-start: -1rem;
+}
+
+.text-ending ul {
+  align-self: center;
+  margin: 2rem auto;
+  gap: 3.5rem;
+}
+
+.text-ending a {
+  color: #458c7dff;
+}
+
+.text-ending a:hover,
+.text-ending a:active {
+  color: #fff;
+}
+
+.text-ending .socials {
+  margin-block-start: 3.5rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.socials img:hover,
+.socials img:active {
+  cursor: pointer;
+  filter: invert(1) brightness(2) saturate(0);
 }

@@ -13,19 +13,19 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Red 400: hsl(7, 99%, 70%)
-- Yellow 500: hsl(51, 100%, 49%)
-- Green 800 (graphic design text): hsl(167, 40%, 24%)
-- Blue 800 (photography text): hsl(198, 62%, 26%)
-- Green 500 (footer): hsl(167, 34%, 41%)
+- Red 400: #fe7867ff
+- Yellow 500: #fad400ff
+- Green 800 (graphic design text): #25564bff
+- Blue 800 (photography text): #19536bff
+- Green 500 (footer): #458c7dff
 
 ### Neutral
 
-- Grey 950: hsl(212, 27%, 19%)
-- Grey 600: hsl(213, 9%, 39%)
-- Grey 550: hsl(232, 10%, 55%)
-- Grey 400: hsl(210, 4%, 67%)
-- White: hsl(0, 100%, 100%)
+- Grey 950: #23303eff
+- Grey 600: #5a636cff
+- Grey 550: #818498ff
+- Grey 400: #a7abaeff
+- White: #ffffffff
 
 ## Typography
 
