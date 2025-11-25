@@ -372,7 +372,7 @@ ul {
   }
 
   .subtext p {
-    margin: 0 6rem;
+    margin: 0 2.5rem;
   }
 
   .testimonials {
@@ -385,16 +385,19 @@ ul {
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 730px) {
   .hero {
     background: url(/images/mobile/image-header.jpg) no-repeat;
     background-size: cover;
     background-position: center;
+    height: 610px;
   }
+
   .hero nav {
     padding: 2rem 5%;
     position: relative;
   }
+
   .hero .nav-items {
     display: none;
   }
@@ -444,8 +447,9 @@ ul {
   }
 
   .hero .center h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-align: center;
+    margin-block-end: -2.2rem;
   }
 
   .grid-view {
@@ -453,16 +457,39 @@ ul {
     flex-direction: column;
   }
 
+  .grid-view .two,
+  .grid-view .three {
+    height: 18rem;
+  }
+
+  .grid-view .two {
+    order: -1;
+  }
+
   .grid-view .stand-alones {
     text-align: center;
-    margin: -1rem -2rem;
+    margin: auto;
+    height: fit-content;
+    margin-block-start: -0.5rem;
+    margin-block-end: 3.5rem;
+    padding-inline-start: 2.5rem;
+    padding-inline-end: 2.5rem;
   }
 
   .stand-alones h2 {
     font-size: 2rem;
   }
 
-  .grid-view .list-items{
+  .subtext {
+    height: 23rem;
+  }
+
+  .subtext p {
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 1.5rem;
+  }
+
+  .grid-view .list-items {
     width: 100%;
   }
 
@@ -485,22 +512,30 @@ ul {
 
   .testimonials {
     height: fit-content;
-    margin-block-end: 2rem;
+  }
+
+  .testimonials h3 {
+    font-size: 0.9rem;
+    margin-block-end: 4rem;
   }
 
   .testimonials .clients-info {
     flex-direction: column;
-    margin-inline-start: 1rem;
-    margin-inline-end: 1rem;
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 1.5rem;
   }
+
   .clients-info .person {
     margin-block-end: 2rem;
+    padding: 0;
   }
 
   .footer .pic-collection {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .clients-info .client-who-what {
+    margin: 2rem auto;
+  }
   .pic-collection .img {
     height: 12rem;
   }
@@ -516,5 +551,12 @@ ul {
   }
   .footer .vier {
     background-image: url(/images/mobile/image-gallery-sugar-cubes.jpg);
+  }
+}
+
+@media (max-width: 330px) {
+  .hero .center h1 {
+    font-size: 1.8rem;
+    margin-inline-start: 0.3rem;
   }
 }
